@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/styles_calculadora.css">
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="img" href="C:/Users/Administrador/Documents/JAVA/Repository/Portifolio/img">
+    <script>
+        function calcularTotal() {
+            var cedulas = [200, 100, 50, 20, 10, 5, 2];
+            var total = 0;
+
+            for (var i = 0; i < cedulas.length; i++) {
+                var quantidade = parseInt(document.getElementById('cedula' + cedulas[i]).value) || 0;
+                total += quantidade * cedulas[i];
+            }
+
+            document.getElementById('total').innerHTML = 'Total: R$ ' + total.toFixed(2);
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>Calculadora de Notas</h1>
+        <div class="calculator">
+            <div class="position">
+            <label for="cedula200">R$ 200:</label>
+            <input type="number" id="cedula200" value="">
+            <br>
+    
+            <label for="cedula100">R$ 100:</label>
+            <input type="number" id="cedula100" value="">
+            <br>
+    
+            <label for="cedula50">R$ 50:</label>
+            <input type="number" id="cedula50" value="">
+            <br>
+    
+            <label for="cedula20">R$ 20:</label>
+            <input type="number" id="cedula20" value="">
+            <br>
+    
+            <label for="cedula10">R$ 10:</label>
+            <input type="number" id="cedula10" value="">
+            <br>
+    
+            <label for="cedula5">R$ 5:</label>
+            <input type="number" id="cedula5" value="">
+            <br>
+    
+            <label for="cedula2">R$ 2:</label>
+            <input type="number" id="cedula2" value="">
+            <br>
+    
+            <button onclick="calcularTotal()">Calcular</button>
+            <p id="total"></p>
+            </div>
+        </div>
+        <a class="btn_voltar" href="Home.html">voltar</a>
+          
+            
+        
+        
+    </main>
+    <footer>
+
+    </footer>
+    
+  
+</body>
+
+</html>

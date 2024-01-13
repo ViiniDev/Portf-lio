@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles_login.css">
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="img" href="C:/Users/Administrador/Documents/JAVA/Repository/Portifolio/img">
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section class="container_login">
+            <div class="login_box">
+                <h1>Login</h1>
+                <form action="">
+                    <input type="text" class="login" placeholder="login/email" name="login" onchange="onChangeEmail()" id="">
+                    <div class="error" id="email-error-obg">Email é obrigatorio</div>
+                    <div class="error" id="email-error">Email é invalido</div>
+                    <input type="password" class="senha" placeholder="senha" name="senha" onchange="onChangePassowrd()" id="">
+                    <div class="error" id="senha-error">Senha é obrigatorio</div>
+                    <button type="button" id="login-btn" disabled="true" onclick="login_accept()">Entrar</button>
+                    <button type="button" class="clear" id="recover-password-button" disabled="true">Recuperar Senha</button>
+                    <button type="button" class ="clear" onclick="cadastrar_user()" >Cadastrar</button>
+
+                </form>
+                
+            </div>
+            
+        </section>
+        <a class="btn_cadastrar" href="Home.html">voltar</a>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="javascript/script_L.js"></script>
+    
+</body>
+
+</html>

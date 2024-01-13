@@ -1,0 +1,85 @@
+/* variaveis VAR */
+:root {
+    --bg-color: #472e46;
+    --second-bg-color: rgba(0,0,0, 0.90);
+    --text-color: #fff;
+    --second-color: #ccc;
+    --main-color: #96088f;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+    --p-small-font: 0.9rem;
+}
+
+/* ESTILIZAÇÃO DE TODA A PAGINA */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+/* FONTE, FUNDO, E TAMANHO DO CORPO */
+body {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 12px;
+    background-color: var(--bg-color);
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.container_login{
+    background-color: #96088f;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.90);
+    
+    
+}
+.cadastro_box{
+    text-align: center;
+   
+    
+}
+h1{
+    margin: 0 40px 0 40px;
+    color: black;
+    font-size: var(--h2-font);
+}
+
+.cadastro_box, form{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    width: 250px;
+    height: 30px;
+    border-radius: 30px;
+    padding: 0 15px 0 15px;
+
+}
+button{
+    width: 150px;
+    height: 25px;
+}
+.cadastro_box a{
+    
+    color: var(--text-color);
+}
+.btn_cadastrar{
+    color: black;
+    background-color: var(--text-color);
+    border-radius: 10%;
+    padding: 0.2rem;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.90);
+   
+  
+}
