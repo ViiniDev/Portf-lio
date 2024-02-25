@@ -52,6 +52,11 @@ body {
 .button-up span {
     color: var(--text-color);
 }
+.button-up :hover{
+    background-color: #a61f8c;
+    color: #191919;
+    border-radius: 40%;
+}
 
 /* AQUI COMEÇA O MENU */
 .center {
@@ -115,13 +120,14 @@ body {
 }
 
 .home {
-    padding: 100px 20px;
+    
     /* Adiciona um pouco de preenchimento aos lados para evitar que o texto fique muito próximo das bordas */
     text-align: justify;
     color: var(--text-color);
 }
 
 .home h2 {
+  
     font-size: 2rem;
     text-shadow: var(--main-color) 2px 2px;
 }
@@ -133,7 +139,8 @@ body {
 }
 
 .home h1 {
-    font-size: 3rem;
+    
+    font-size: 3.5rem;
     margin: 20px 0;
     text-shadow: var(--main-color) 2px 2px;
 }
@@ -141,11 +148,13 @@ body {
 .home h3 {
     font-size: 2rem;
     margin: 10px 0;
+    text-shadow: var(--main-color) 2px 2px;
+   
     
 }
 .home h4{
     color: #a61f8c;
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-shadow: var(--bg-color) 2px 2px;
 }
 .links {
@@ -166,6 +175,11 @@ body {
     margin-left: 6rem;
     border-radius: 100%;
     
+}
+.links :hover{
+    
+    background-color: #a61f8c;
+    transform: scale(1.05);
 }
 
 .home-img {
